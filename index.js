@@ -8,6 +8,7 @@ const startClassToggle = document.querySelector(".start-toggle")
 const boxButton = document.getElementById("box-button")
 const borderNone = document.querySelector(".border-none")
 const borderDotted = document.querySelector(".border-dotted")
+const containerMenu = document.getElementById("menu-container")
 
 
 buttonStart.addEventListener("click", () => {
@@ -15,6 +16,13 @@ buttonStart.classList.toggle("start")
 boxButton.classList.toggle("border-none")
 buttonStart.classList.toggle("start-toggle")
 boxButton.classList.toggle("border-dotted")
+
+if( buttonStart.classList.contains("start-toggle")){
+    containerMenu.style.display = "flex"
+} else{
+    containerMenu.style.display = "none"
+}
+
 })
 
 // NOTIFICATION AREA
