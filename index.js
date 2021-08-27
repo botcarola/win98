@@ -2,19 +2,19 @@ console.log("hola")
 
 // BUTTON START 
 
-const buttonStart = document.getElementById ("button-start")
-console.log(buttonStart)
+const buttonStart = document.getElementById("button-start")
+const startClass = document.querySelector(".start")
+const startClassToggle = document.querySelector(".start-toggle")
+const boxButton = document.getElementById("box-button")
+const borderNone = document.querySelector(".border-none")
+const borderDotted = document.querySelector(".border-dotted")
 
-const startClass = document.querySelector (".start")
-console.log(startClass)
-const startClassToggle = document.querySelector (".start-toggle")
-console.log(startClassToggle)
 
-const body = document.getElementById("body")
-
-buttonStart.addEventListener("click" , () =>{
-buttonStart.classList.toggle("start")
-buttonStart.classList.toggle("start-toggle")
-}) 
+buttonStart.addEventListener("click", () => {
+    buttonStart.classList.toggle("start")
+    boxButton.classList.toggle("border-none")
+    buttonStart.classList.toggle("start-toggle")
+    boxButton.classList.toggle("border-dotted")
+})
 
 
