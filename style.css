@@ -42,29 +42,46 @@ margin: 0;
 background-color: #C6C6C6;
 width: 60px;
 height: 30px;
-font-size: 15px;
+font-size: 12px;
 margin: 1px;
 display: flex; 
 align-items: center;
 justify-content: space-evenly;
 padding: 0; 
-border: 1.5px outset grey;
+border: 1.5px outset white;
+font-weight: 600;
 }
 
 .start-toggle{
 background-color: #C6C6C6;
 width: 60px;
 height: 30px;
-font-size: 15px;
+font-size: 12px;
 margin: 1px;
 display: flex; 
 align-items: center;
 justify-content: space-evenly;
 padding: 0; 
-border: 1.5px inset grey;
+border: 1.5px inset white;
+font-weight: 600;
 }
 
 .ico-win{
 width: 16px;
 height: 16px;  
 }
+
+.notification-area{
+background-color: #C6C6C6;
+width: 90px;
+height: 25px;
+display: flex;
+align-items: center;
+justify-content:space-around; 
+font-size: 12px;
+font-weight:normal;
+padding-right: 2px; 
+border: 1.5px inset white;
+margin-right: 3px;
+}
+

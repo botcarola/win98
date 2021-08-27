@@ -11,10 +11,23 @@ const borderDotted = document.querySelector(".border-dotted")
 
 
 buttonStart.addEventListener("click", () => {
-    buttonStart.classList.toggle("start")
-    boxButton.classList.toggle("border-none")
-    buttonStart.classList.toggle("start-toggle")
-    boxButton.classList.toggle("border-dotted")
+buttonStart.classList.toggle("start")
+boxButton.classList.toggle("border-none")
+buttonStart.classList.toggle("start-toggle")
+boxButton.classList.toggle("border-dotted")
 })
 
+// NOTIFICATION AREA
 
+function startTime(){
+today = new Date();
+h = today.getHours();
+m = today.getMinutes();
+s = today.getSeconds();
+m = checkTime(m);
+s = checkTime(s);
+document.getElementById('clock').innerHTML= h + ":" + m ;
+t = setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;} return i;}
+window.onload = function() {startTime();}
