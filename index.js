@@ -11,6 +11,7 @@ const borderDotted = document.querySelector(".border-dotted")
 const containerMenu = document.getElementById("menu-container")
 
 
+
 buttonStart.addEventListener("click", () => {
 buttonStart.classList.toggle("start")
 boxButton.classList.toggle("border-none")
@@ -18,12 +19,16 @@ buttonStart.classList.toggle("start-toggle")
 boxButton.classList.toggle("border-dotted")
 
 if( buttonStart.classList.contains("start-toggle")){
-    containerMenu.style.display = "flex"
+ containerMenu.style.display = "flex"
 } else{
-    containerMenu.style.display = "none"
+  containerMenu.style.display = "none"
 }
 
 })
+
+
+
+
 
 // NOTIFICATION AREA
 
@@ -34,6 +39,7 @@ m = today.getMinutes();
 m = checkTime(m);
 document.getElementById('clock').innerHTML= h + ":" + m ;
 t = setTimeout('startTime()',500);}
+
 function checkTime(i)
 {if (i<10) {i="0" + i;} return i;}
 window.onload = function() {startTime();}
