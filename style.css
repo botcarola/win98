@@ -7,6 +7,38 @@ overflow: hidden;
 font-family: Arial, Helvetica, sans-serif;
 }
 
+/** DESKTOP **/
+
+.desktop{
+    display: flex;
+    flex-direction: column;
+    width: 6%;
+    height: 700px;
+    margin: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.desktop-ico{
+    width: 65px;
+    height: 80px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5px;
+}
+
+.desktop-ico img{
+    width: 45px;
+    height: 45px;
+}
+
+/** MENU TASKBAR **/
+
 
 ul{
 list-style: none;
@@ -58,14 +90,14 @@ padding: 7px;
 }
 
 .space-ico{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+display: flex;
+align-items: center;
+justify-content: flex-start;
 }
 
 .menu li:hover{
-    color: white;
-    background-color: rgb(7, 7, 139);
+color: white;
+background-color: rgb(7, 7, 139);
 }
 
 li span{
@@ -83,7 +115,7 @@ width: 10px;
 height: 10px; 
 }
 
-
+/** FOOTER, BUTTON TASKBAR, NOTIFICATION AREA **/
 
 footer{
 background-color: #C6C6C6;
@@ -100,20 +132,20 @@ margin: 0;
 }
 
 .border-none{
-    width: 95%;
-    height: 23px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+width: 95%;
+height: 23px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .border-dotted{
-    width: 95%;
-    height: 23px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px dotted #000000;    
+width: 95%;
+height: 23px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px dotted #000000;    
 }
 
 .start{
