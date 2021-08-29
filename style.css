@@ -1,4 +1,4 @@
-body{
+html, body{
 margin: 0;
 padding: 0;
 background-color: black;    
@@ -12,22 +12,21 @@ font-family: Arial, Helvetica, sans-serif;
 .desktop{
     display: flex;
     flex-direction: column;
-    width: 6%;
+    width: 4%;
     height: 700px;
-    margin: 5px;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .desktop-ico{
     width: 65px;
-    height: 80px;
+    height: 85px;
     color: white;
     font-size: 12px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin: 5px;
 }
@@ -125,8 +124,8 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 border: 1px solid  white;
-position: absolute;
 bottom: 0;
+position: fixed;
 padding: 0;
 margin: 0;
 }
@@ -196,3 +195,101 @@ margin-right: 3px;
 }
 
 
+/** QUERY **/
+
+@media screen and (max-width: 1700px) {
+
+    .desktop{
+        width: 6%;
+        height: 700px;
+        
+    }
+
+    .desktop-ico{
+        font-size: 12px;
+    }    
+  }
+
+@media screen and (max-width: 1200px) {
+
+    .desktop{
+        width: 5%;
+        height: 650px;
+        margin-left: 22px;
+    }
+  
+  }
+
+@media screen and (max-width: 700px) {
+
+    .desktop{
+        height: 600px;
+        margin-left: 22px;
+    }
+
+    .desktop-ico{
+        font-size: 8px;
+    }  
+    
+    .desktop-ico img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .container-menu{
+        width: 220px;
+        height: 435px;
+    }
+
+    .menu li{
+        padding: 6px;
+    }
+
+    li span{
+        font-size: 12px;
+    }
+
+    .ico-menu{
+        width: 30px;
+        height: 30px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 330px) {
+
+    .desktop{
+        height: 500px;
+        margin-left: 22px;
+    }
+
+    .desktop-ico{
+        font-size: 8px;
+    } 
+    
+    .desktop-ico img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .container-menu{
+        width: 160px;
+        height: 290px;
+    }
+
+    .menu li{
+        padding: 4px;
+    }
+
+    li span{
+        font-size: 6px;
+    }
+
+    .ico-menu{
+        width: 20px;
+        height: 20px;
+    }
+
+
+  }
+  
