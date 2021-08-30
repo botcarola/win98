@@ -8,14 +8,14 @@ const desktopIcons = document.querySelectorAll(".desktop-ico")
 console.log(desktopIcons)
 
 const dblClickIcons = () =>{
-  for (let i = 0; i < spanListDesktop.length; i++){
-    spanListDesktop[i].style.border = "1px dotted white"
-    spanListDesktop[i].style.backgroundColor = "blue"
-  }
+for (let i = 0; i < spanListDesktop.length; i++){
+  spanListDesktop[i].style.border = "1px dotted white"
+  spanListDesktop[i].style.backgroundColor = "blue"
+}
 }
 
 
-  
+
 
 // BUTTON START 
 
@@ -34,9 +34,9 @@ buttonStart.classList.toggle("start-toggle")
 boxButton.classList.toggle("border-dotted")
 
 if( buttonStart.classList.contains("start-toggle")){
- containerMenu.style.display = "flex"
+containerMenu.style.display = "flex"
 } else{
-  containerMenu.style.display = "none"
+containerMenu.style.display = "none"
 }
 
 })
