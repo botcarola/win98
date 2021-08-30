@@ -1,5 +1,22 @@
 console.log("hola")
 
+// DB CLICK DESKTOP PROGRAMS
+
+const spanListDesktop = document.querySelectorAll(".dbclick")
+console.log(spanListDesktop)
+const desktopIcons = document.querySelectorAll(".desktop-ico")
+console.log(desktopIcons)
+
+const dblClickIcons = () =>{
+  for (let i = 0; i < spanListDesktop.length; i++){
+    spanListDesktop[i].style.border = "1px dotted white"
+    spanListDesktop[i].style.backgroundColor = "blue"
+  }
+}
+
+
+  
+
 // BUTTON START 
 
 const buttonStart = document.getElementById("button-start")
@@ -9,8 +26,6 @@ const boxButton = document.getElementById("box-button")
 const borderNone = document.querySelector(".border-none")
 const borderDotted = document.querySelector(".border-dotted")
 const containerMenu = document.getElementById("menu-container")
-
-
 
 buttonStart.addEventListener("click", () => {
 buttonStart.classList.toggle("start")
@@ -25,10 +40,6 @@ if( buttonStart.classList.contains("start-toggle")){
 }
 
 })
-
-
-
-
 
 // NOTIFICATION AREA
 

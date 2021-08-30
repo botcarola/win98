@@ -1,7 +1,7 @@
 html, body{
 margin: 0;
 padding: 0;
-background-color: black;    
+background-color: #008080;    
 min-height: 100vh; 
 overflow: hidden;
 font-family: Arial, Helvetica, sans-serif;
@@ -10,30 +10,30 @@ font-family: Arial, Helvetica, sans-serif;
 /** DESKTOP **/
 
 .desktop{
-    display: flex;
-    flex-direction: column;
-    width: 4%;
-    height: 700px;
-    justify-content: space-evenly;
-    align-items: center;
+display: flex;
+flex-direction: column;
+width: 4%;
+height: 700px;
+justify-content: space-evenly;
+align-items: center;
 }
 
 .desktop-ico{
-    width: 65px;
-    height: 85px;
-    color: white;
-    font-size: 12px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5px;
+width: 68px;
+height: 85px;
+color: white;
+font-size: 12px;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+margin: 5px;    
 }
 
 .desktop-ico img{
-    width: 45px;
-    height: 45px;
+width: 45px;
+height: 45px;
 }
 
 /** MENU TASKBAR **/
@@ -199,97 +199,91 @@ margin-right: 3px;
 
 @media screen and (max-width: 1700px) {
 
-    .desktop{
-        width: 6%;
-        height: 700px;
-        
-    }
+.desktop{
+    width: 6%;
+    height: 700px;        
+}
 
-    .desktop-ico{
-        font-size: 12px;
-    }    
-  }
+.desktop-ico{
+    font-size: 12px;
+}    
+}
 
 @media screen and (max-width: 1200px) {
 
-    .desktop{
-        width: 5%;
-        height: 650px;
-        margin-left: 22px;
-    }
-  
-  }
+.desktop{
+    width: 5%;
+    height: 650px;
+    margin-left: 22px;
+}  
+}
 
 @media screen and (max-width: 700px) {
 
-    .desktop{
-        height: 600px;
-        margin-left: 22px;
-    }
+.desktop{
+    height: 600px;
+    margin-left: 22px;
+}
 
-    .desktop-ico{
-        font-size: 8px;
-    }  
-    
-    .desktop-ico img{
-        width: 40px;
-        height: 40px;
-    }
+.desktop-ico{
+    font-size: 8px;
+}  
 
-    .container-menu{
-        width: 220px;
-        height: 435px;
-    }
+.desktop-ico img{
+    width: 40px;
+    height: 40px;
+}
 
-    .menu li{
-        padding: 6px;
-    }
+.container-menu{
+    width: 220px;
+    height: 435px;
+}
 
-    li span{
-        font-size: 12px;
-    }
+.menu li{
+    padding: 6px;
+}
 
-    .ico-menu{
-        width: 30px;
-        height: 30px;
-    }
-  
-  }
-  
-  @media screen and (max-width: 330px) {
+li span{
+    font-size: 12px;
+}
 
-    .desktop{
-        height: 500px;
-        margin-left: 22px;
-    }
+.ico-menu{
+    width: 30px;
+    height: 30px;
+}  
+}
 
-    .desktop-ico{
-        font-size: 8px;
-    } 
-    
-    .desktop-ico img{
-        width: 35px;
-        height: 35px;
-    }
+@media screen and (max-width: 330px) {
 
-    .container-menu{
-        width: 160px;
-        height: 290px;
-    }
+.desktop{
+    height: 500px;
+    margin-left: 22px;
+}
 
-    .menu li{
-        padding: 4px;
-    }
+.desktop-ico{
+    font-size: 8px;
+} 
 
-    li span{
-        font-size: 6px;
-    }
+.desktop-ico img{
+    width: 35px;
+    height: 35px;
+}
 
-    .ico-menu{
-        width: 20px;
-        height: 20px;
-    }
+.container-menu{
+    width: 160px;
+    height: 290px;
+}
 
+.menu li{
+    padding: 4px;
+}
 
-  }
-  
+li span{
+    font-size: 6px;
+}
+
+.ico-menu{
+    width: 20px;
+    height: 20px;
+}
+}
